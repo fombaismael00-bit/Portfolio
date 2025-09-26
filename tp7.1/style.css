@@ -1,0 +1,26 @@
+div{
+    background-color: rgb(177, 226, 43);
+
+    height: 200px;
+    width: 800px;
+    margin: 10px;
+
+
+}
+p{
+    color: red;
+}
+
+.c1{
+
+    background-color: rgb(255, 240, 247);
+    height: 200px;;
+    width:1000px;
+    margin: 10px;
+
+
+
+}
+.p1{
+    color: blue;
+}
