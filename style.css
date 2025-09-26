@@ -1,0 +1,27 @@
+.block{
+    background-color: brown;
+    float: left;
+    height: 200px;
+width: 200px;
+margin: 10px;
+
+
+}
+.block2{
+    margin-left: 20px;
+    height: 200px;
+    width: 150px;
+    background-color: aqua;
+    float: right;
+
+}
+
+.block3{
+margin-left: 20px;
+height: 100px;
+width: 150px;
+background-color: yellow;
+clear: both;
+
+
+}
