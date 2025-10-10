@@ -14,11 +14,11 @@ function calcul_moyenne() {
         document.write("Redoublant");
         document.write ('</br><a href="index.html">Retour</a>');
     } 
-    else if( moyenne >12) {
+    else if( moyenne <12) {
     document.write("Admis-Passable");
     document.write ('</br><a href="index.html">Retour</a>');
     }
-    else if( moyenne >14) {
+    else if( moyenne <14) {
         document.write("Admis-Bien");
         document.write ('</br><a href="index.html">Retour</a>');
         }
