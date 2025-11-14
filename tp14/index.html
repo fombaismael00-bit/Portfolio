@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div>   
+        <div class="c1">
+        <img src="image.jpg.png" alt="">
+        <div>
+            <label for="">Date de Creation 10/09/2023</label><br>
+            <label for="">N° de facture:4587575</label>
+        </div>
+
+        </div>
+
+        <div class="c2">
+            <div>
+                <h1>Destinataire</h1>
+                <label for="">Nom</label><br>
+                <label for="">Nom de la société</label><br>
+                <label for="">Adresse Postale</label><br>
+                <label for="">Telephone</label><br>
+                <label for="">Email</label><br>
+            </div>
+
+            <div>
+                <h1>Envoyer à</h1>
+                <label for="">Nom</label><br>
+                <label for="">Nom de la société</label><br>
+                <label for="">Adresse Postale</label><br>
+                <label for="">Telephone</label><br>
+                <label for="">Email</label><br>
+            </div>
+
+
+
+
+
+        </div>
+    
+
+
+
+
+
+        </div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+        <div class="c3">
+            <table>
+                <tr>
+                  <th>Article :</th>
+                  <th>Quantité :</th>
+                  <th>Prix :</th>
+                  <th>Résultat :</th>
+                </tr>
+            
+                <tr>
+                    <td><input type="text" id="art1"></td>
+                    <td><input type="number" id="qte1"></td>
+                    <td><input type="number" id="prix1"></td>
+                    <td><input type="number" id="res1" readonly></td>
+                </tr>
+            
+                <tr>
+                    <td><input type="text" id="art2"></td>
+                    <td><input type="number" id="qte2"></td>
+                    <td><input type="number" id="prix2"></td>
+                    <td><input type="number" id="res2" readonly></td>
+                </tr>
+            
+                <tr>
+                    <td><input type="text" id="art3"></td>
+                    <td><input type="number" id="qte3"></td>
+                    <td><input type="number" id="prix3"></td>
+                    <td><input type="number" id="res3" readonly></td>
+                </tr>
+            
+                <tr>
+                    <td colspan="2">
+                        <button onclick="reinitialiser()">Réinitialiser</button>
+                        <button onclick="calculer()">Résultat</button>
+                        <button onclick="imprimer()">Imprimer</button>
+                    </td>
+                    <td>Total :</td>
+                    <td><input type="number" id="restotal" readonly></td>
+                </tr>
+            </table>
+            
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>
