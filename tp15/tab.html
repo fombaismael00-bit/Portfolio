@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Document</title>
+
+
+<script src="tab.js"></script>
+</head>
+<body>
+<h2>Tableau Dynamique</h2>
+
+Nom: <br>
+<input type="text" placeholder="Nom" name="nom" id="nom"> <br>
+
+Age: <br>
+<input type="text" placeholder="Age" name="age" id="age"><br> 
+Prenom: <br>
+<input type="text" placeholder="Prenom" name="prenom" id="prenom"> 
+<br><br>
+
+<table border="2" id="myTable">
+
+<tr>
+<td>Nom</td>
+<td>Age</td>
+<td>Prenom</td>
+
+</tr>
+<tr>
+<td>Franklin</td>
+<td>30</td>
+<td>Harouna</td>
+</tr>
+<tr>
+<td>Mouhamad</td>
+<td>25</td>
+<td>Othmane</td>
+</tr>
+</table>
+
+<button class="buttonAdd" onclick="ajouterLigne()">Ajoutez une ligne</button>
+
+</body>
+</html>
