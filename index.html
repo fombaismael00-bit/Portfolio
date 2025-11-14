@@ -4,34 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="portflio.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <a href="tp1/index.html">TP1</a><br>
-    <a href="tp5/index.html">TP5</a><br>
-    <a href="tp6/index.html">TP6</a><br>
-    <a href="mission3/index.html">Mission 3</a><br>
-    <a href="tp7.1/index.html">TP7.1</a><br>
-    <a href="tp7.2/index.html">TP7.2</a><br>
-    <a href="tp8/index.html">TP8</a><br>
-    <a href="mission4/mission4_FOMBA_Ismael.pdf">Mission 4</a><br>
-    <a href="mission5/index.html">Mission 5</a><br>
-    <a href="tp11/index.html">TP11</a><br>
-    <a href="tp12/index.html">TP12</a><br>
-    <a href="mission6/index.html">Mission 6</a><br>
-    <a href="tp13/index.html">TP13</a><br>
-                                   
-                                      
+    <div>   
+        <div class="c1">
+        <img src="image.jpg.png" alt="">
+        <div>
+            <label for="">Date de Creation 10/09/2023</label><br>
+            <label for="">N° de facture:4587575</label>
+        </div>
+
+        </div>
+
+        <div class="c2">
+            <div>
+                <h1>Destinataire</h1>
+                <label for="">Nom</label><br>
+                <label for="">Nom de la société</label><br>
+                <label for="">Adresse Postale</label><br>
+                <label for="">Telephone</label><br>
+                <label for="">Email</label><br>
+            </div>
+
+            <div>
+                <h1>Envoyer à</h1>
+                <label for="">Nom</label><br>
+                <label for="">Nom de la société</label><br>
+                <label for="">Adresse Postale</label><br>
+                <label for="">Telephone</label><br>
+                <label for="">Email</label><br>
+            </div>
+
+
+
+
+
+        </div>
     
-    
+
+
+
+
+
+        </div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+        <div class="c3">
+            <table>
+                <tr>
+                  <th>Article :</th>
+                  <th>Quantité :</th>
+                  <th>Prix :</th>
+                  <th>Résultat :</th>
+                </tr>
+            
+                <tr>
+                    <td><input type="text" id="art1"></td>
+                    <td><input type="number" id="qte1"></td>
+                    <td><input type="number" id="prix1"></td>
+                    <td><input type="number" id="res1" readonly></td>
+                </tr>
+            
+                <tr>
+                    <td><input type="text" id="art2"></td>
+                    <td><input type="number" id="qte2"></td>
+                    <td><input type="number" id="prix2"></td>
+                    <td><input type="number" id="res2" readonly></td>
+                </tr>
+            
+                <tr>
+                    <td><input type="text" id="art3"></td>
+                    <td><input type="number" id="qte3"></td>
+                    <td><input type="number" id="prix3"></td>
+                    <td><input type="number" id="res3" readonly></td>
+                </tr>
+            
+                <tr>
+                    <td colspan="2">
+                        <button onclick="reinitialiser()">Réinitialiser</button>
+                        <button onclick="calculer()">Résultat</button>
+                        <button onclick="imprimer()">Imprimer</button>
+                    </td>
+                    <td>Total :</td>
+                    <td><input type="number" id="restotal" readonly></td>
+                </tr>
+            </table>
+            
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
