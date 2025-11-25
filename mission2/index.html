@@ -1,18 +1,26 @@
-<!DOCTYPE html>
-<html>
+
+<!doctype html>
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Portail d'information</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portail d'information - Mission 2</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="header">
+    <h1>Portail d'information - Parcoursup / Orientation</h1>
+  
+  </header>
 
-<h1>Portail d'information</h1>
+  <div class="container">
+    <div class="left">
+      <iframe src="nav.html" name="navFrame" width="100%" height="800" title="Navigation"></iframe>
+    </div>
 
-<!-- Iframe menu -->
-<iframe src="menu.html" width="30%" height="800px"></iframe>
-
-<!-- Iframe contenu -->
-<iframe name="contenu" width="65%" height="800px"></iframe>
-
+    <div class="right">
+      <iframe src="contenu_accueil.html" name="contentFrame" width="100%" height="800" title="Contenu principal"></iframe>
+    </div>
+  </div>
 </body>
 </html>

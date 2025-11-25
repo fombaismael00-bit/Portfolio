@@ -1,0 +1,35 @@
+
+<!doctype html>
+<html lang="fr">
+<head><meta charset="utf-8"/><title>Tableau et Formulaire</title></head>
+<body style="font-family:Arial;padding:10px;">
+  <h2>Tableau (Annexe 1) et Formulaire</h2>
+  <p>Exemple de tableau .</p>
+  <table>
+    <thead><tr><th>N°</th><th>Intitulé</th><th>Description</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Parcoursup</td><td>Informations générales</td></tr>
+      <tr><td>2</td><td>BTS SIO</td><td>Présentation de la filière</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Formulaire simple</h3>
+  <form action="#" method="post" onsubmit="alert('Formulaire soumis (exemple)'); return false;">
+    <label>Nom: <input type="text" name="nom" required></label>
+    <label>Prénom: <input type="text" name="prenom" required></label>
+    <label>Date de naissance: <input type="date" name="dob" required></label>
+    <label>Adresse postale:<br><textarea name="adresse" rows="3"></textarea></label>
+    <label>Classe:
+      <select name="classe">
+        <option value="BTS1">BTS 1</option>
+        <option value="BTS2">BTS 2</option>
+        <option value="L3">L3</option>
+      </select>
+    </label>
+    <div class="form-buttons">
+      <button type="submit">Valider</button>
+      <button type="reset">Annuler</button>
+    </div>
+  </form>
+</body>
+</html>
