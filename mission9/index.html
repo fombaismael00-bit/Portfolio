@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>QCM Manga </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Testez votre culture Manga !</h1>
+            <p>10 questions pour savoir si vous êtes un vrai Otaku.</p>
+        </header>
+
+        <form id="quizForm">
+            
+            <div class="question-box">
+                <h3>1. Qui est l'auteur de "Dragon Ball" ?</h3>
+                <input type="radio" name="q1" id="q1_faux1"> Eiichirō Oda<br>
+                <input type="radio" name="q1" id="q1_vrai" value="1"> Akira Toriyama<br>
+                <input type="radio" name="q1" id="q1_faux2"> Masashi Kishimoto<br>
+            </div>
+
+            <div class="question-box">
+                <h3>2. Dans "One Piece", quel fruit a mangé Luffy ?</h3>
+                <input type="radio" name="q2" id="q2_vrai" value="1"> Gomu Gomu no Mi<br>
+                <input type="radio" name="q2" id="q2_faux1"> Mera Mera no Mi<br>
+            </div>
+
+            <div class="question-box">
+                <h3>3. Quel est le village de Naruto ?</h3>
+                <input type="radio" name="q3" id="q3_faux1"> Suna<br>
+                <input type="radio" name="q3" id="q3_vrai" value="1"> Konoha<br>
+                <input type="radio" name="q3" id="q3_faux2"> Kiri<br>
+            </div>
+
+            <div class="question-box">
+                <h3>4. Cochez les mangas de type "Shonen" (plusieurs réponses) :</h3>
+                <input type="checkbox" id="q4_vrai1"> Bleach<br>
+                <input type="checkbox" id="q4_faux1"> Nana (Shojo)<br>
+                <input type="checkbox" id="q4_vrai2"> My Hero Academia<br>
+            </div>
+
+            <div class="question-box">
+                <h3>5. Comment s'appelle le cahier de Light Yagami ?</h3>
+                <input type="radio" name="q5" id="q5_vrai" value="1"> Death Note<br>
+                <input type="radio" name="q5" id="q5_faux1"> Life Note<br>
+            </div>
+
+            <div class="question-box">
+                <h3>6. Qui est le "Fullmetal Alchemist" ?</h3>
+                <input type="radio" name="q6" id="q6_faux1"> Alphonse Elric<br>
+                <input type="radio" name="q6" id="q6_vrai" value="1"> Edward Elric<br>
+            </div>
+
+            <div class="question-box">
+                <h3>7. Dans "L'Attaque des Titans", que mangent les titans ?</h3>
+                <input type="radio" name="q7" id="q7_vrai" value="1"> Des humains<br>
+                <input type="radio" name="q7" id="q7_faux1"> Des plantes<br>
+            </div>
+
+            <div class="question-box">
+                <h3>8. Saitama (One Punch Man) a perdu ses cheveux car...</h3>
+                <input type="radio" name="q8" id="q8_faux1"> Il est malade<br>
+                <input type="radio" name="q8" id="q8_vrai" value="1"> Il s'est trop entraîné<br>
+            </div>
+
+            <div class="question-box">
+                <h3>9. Quel est le but de Tanjiro (Demon Slayer) ?</h3>
+                <input type="radio" name="q9" id="q9_vrai" value="1"> Sauver sa soeur Nezuko<br>
+                <input type="radio" name="q9" id="q9_faux1"> Devenir roi<br>
+            </div>
+
+            <div class="question-box">
+                <h3>10. Le Studio Ghibli a été fondé par...</h3>
+                <input type="radio" name="q10" id="q10_faux1"> Walt Disney<br>
+                <input type="radio" name="q10" id="q10_vrai" value="1"> Hayao Miyazaki<br>
+            </div>
+
+            <div class="actions">
+                <button type="button" onclick="testqcm()" class="btn-vert">Correction</button>
+                
+                <button type="reset" class="btn-rouge">Effacer</button>
+                
+                <button type="button" onclick="ouvrirCorrige()" class="btn-bleu">Corrigé</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
