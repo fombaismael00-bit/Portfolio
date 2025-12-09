@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module de Facturation GSB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="facture-container">
+        <header>
+            <div class="header-left">
+                <h2>Nom de la compagnie</h2>
+                <p>Adresse postale</p>
+                <p class="contact-details">Détails du contact</p>
+            </div>
+            <div class="header-right">
+                <h1>FACTURE</h1>
+                <p id="invoice-date">26/01/2025</p>
+                <a href="#">Facture d'achat</a>
+            </div>
+        </header>
+
+        <section class="adresses">
+            <div class="destinataire">
+                <p class="title">Destinataire</p>
+                <hr>
+                <p>Nom</p>
+                <p>Nom de la société</p>
+                <p>Adresse postale</p>
+                <p>Téléphone</p>
+                <p>Email</p>
+            </div>
+            <div class="envoyer-a">
+                <p class="conditions">Conditions de paiement, par exemple 30 jours</p>
+                <p class="title">Envoyer à</p>
+                <hr>
+                <p>Nom</p>
+                <p>Nom de la société</p>
+                <p>Adresse postale</p>
+                <p>Téléphone</p>
+                <p>Email</p>
+            </div>
+        </section>
+
+        <section class="details-commande">
+            <table id="table_inv">
+                <thead>
+                    <tr>
+                        <th class="col-desc">DESCRIPTION</th>
+                        <th class="col-qte">QUANTITÉ</th>
+                        <th class="col-prix">PRIX UNITAIRE</th>
+                        <th class="col-total">TOTAL</th>
+                    </tr>
+                </thead>
+                <tbody id="invoice-lines">
+                    <tr class="row" id="modeleLigne">
+                        <td><input type="text" name="desc" class="input desc" value="desc1"></td>
+                        <td><input type="text" name="qte" class="input qte" value="0"></td>
+                        <td><input type="text" name="prix" class="input prix" value="0"></td>
+                        <td><input type="text" name="total" class="input totalLigne" readonly value="0.00"></td>
+                    </tr>
+                    <tr class="row">
+                        <td><input type="text" name="desc" class="input desc" value="desc2"></td>
+                        <td><input type="text" name="qte" class="input qte" value="0"></td>
+                        <td><input type="text" name="prix" class="input prix" value="0"></td>
+                        <td><input type="text" name="total" class="input totalLigne" readonly value="0.00"></td>
+                    </tr>
+                    <tr class="row">
+                        <td><input type="text" name="desc" class="input desc" value="desc3"></td>
+                        <td><input type="text" name="qte" class="input qte" value="0"></td>
+                        <td><input type="text" name="prix" class="input prix" value="0"></td>
+                        <td><input type="text" name="total" class="input totalLigne" readonly value="0.00"></td>
+                    </tr>
+                    <tr class="row lastrow" id="lastLigne">
+                        <td><input type="text" name="desc" class="input desc" value="desc4"></td>
+                        <td><input type="text" name="qte" class="input qte" value="0"></td>
+                        <td><input type="text" name="prix" class="input prix" value="0"></td>
+                        <td><input type="text" name="total" class="input totalLigne" readonly value="0.00"></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td rowspan="7" class="remarques">
+                            <p>Remarques, notes et instructions de paiement</p>
+                            <textarea></textarea>
+                        </td>
+                        <td colspan="2" class="label">SOUS-TOTAL</td>
+                        <td class="result" id="sous-total">0.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="label">REMISE</td>
+                        <td class="result input-cell"><input type="number" id="remise-input" value="10.00"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="label">SOUS-TOTAL MOINS LES REMISES</td>
+                        <td class="result" id="sous-total-remise">0.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="label">TAUX D'IMPOSITION</td>
+                        <td class="result input-cell"><input type="number" id="taxe-taux" value="10.00"><span>%</span></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="label">TAXE TOTALE</td>
+                        <td class="result" id="taxe-totale">0.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="label">EXPEDITO, MANUTENTION</td>
+                        <td class="result input-cell"><input type="number" id="frais-expedition" value="5.00"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="label total-final">SOLDE DU</td>
+                        <td class="result total-final" id="solde-du">0.00€</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section class="commandes">
+            <button onclick="calculate()">Calculer</button>
+            <button onclick="ajouterLigne()">Ajouter une ligne</button>
+            <button onclick="remplir()">Remplir automatiquement</button>
+            <button onclick="window.print()">Imprimer</button>
+            <button onclick="window.location.reload()">Annuler</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

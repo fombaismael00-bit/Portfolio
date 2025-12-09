@@ -1,0 +1,169 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.facture-container {
+    width: 90%;
+    max-width: 1000px;
+    background-color: #e0f2f7; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 0;
+}
+
+
+header {
+    background-color: #008080; 
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+.header-right {
+    text-align: right;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0 0 5px 0;
+}
+
+
+.adresses {
+    display: flex;
+    padding: 30px;
+    background-color: #b0e0e6; 
+}
+
+.destinataire, .envoyer-a {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.adresses hr {
+    border-color: #008080;
+}
+
+
+.details-commande {
+    padding: 0 30px 20px 30px;
+    background-color: #b0e0e6;
+}
+
+#table_inv {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#table_inv thead th {
+    background-color: #008080; 
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #006666;
+}
+
+
+.col-desc { width: 50%; }
+.col-qte { width: 15%; }
+.col-prix { width: 15%; }
+.col-total { width: 20%; }
+
+#table_inv td {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+
+.input {
+    width: 95%;
+    border: none;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.input[readonly] {
+    background-color: #f9f9f9;
+    text-align: right;
+    font-weight: bold;
+}
+
+.remarques {
+    text-align: left;
+    vertical-align: top;
+    padding: 10px;
+    border: none !important;
+}
+
+.remarques textarea {
+    width: 100%;
+    min-height: 100px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+#table_inv tfoot .label {
+    text-align: right;
+    font-weight: bold;
+    padding-right: 10px;
+    border: none;
+}
+
+#table_inv tfoot .result {
+    text-align: right;
+    font-weight: bold;
+    padding-right: 5px;
+    border: none;
+}
+
+
+.input-cell input {
+    width: 80px;
+    text-align: right;
+    border: 1px solid #ccc;
+    padding: 3px;
+}
+
+.total-final {
+    background-color: #f7a0b3; 
+    font-size: 1.2em;
+    color: #8b0000;
+}
+
+
+.commandes {
+    background-color: #b0e0e6; 
+    text-align: left; 
+    padding: 15px 30px;
+}
+
+.commandes button {
+    padding: 8px 12px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #e0e0e0; 
+    color: #333;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+    font-size: 0.9em;
+}
+
+.commandes button:hover {
+    background-color: #ccc;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+@media print {
+    .commandes {
+        display: none;
+    }
+}
